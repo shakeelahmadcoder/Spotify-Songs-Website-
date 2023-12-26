@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar  */
+nav ul{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 70px ;
+}
+nav ul li{
+    padding: 8px 23px ;
+    list-style-type: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 4px ;
+}
+
+/* Container  */
+.container{
+    background-color: black;
+    /* height: 90vh; */
+    width: 80vw;
+    margin: 20px auto;
+    border-radius: 15px;
+    color: white;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 12px 20px ;
+}
+.songItem{
+    background-color: white;
+    color: black;
+    display: flex;
+    border-radius: 20px ;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+    padding: 5px ;
+    margin: 7px 0px ;
+}
+.songItem img{
+    border-radius: 20px ;
+}
+.songListPlay img{
+    cursor: pointer;
+
+}
+.songListPlay{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* bottom container  */
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100px ;
+    position: sticky;
+    bottom: 0;
+    color: white;
+    
+}
+#myProgressBar{
+    width: 80vw;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons img{
+    filter: invert(100%);
+    cursor: pointer;
+    width: 50px ;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+@media only screen and (max-width: 735px ) {
+    .songItem{
+       width: 100%;
+    }
+    .songInfo {
+        
+        left: 4vw;
+    }
+    h1{
+        text-align: center;
+    }
+  }
